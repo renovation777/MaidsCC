@@ -1,0 +1,112 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="enableVPN" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1130.4,738.4" sap2010:WorkflowViewState.IdRef="enableVPN_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="enableVPN" sap:VirtualizedContainerService.HintSize="512,673.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: hide.me VPN" sap:VirtualizedContainerService.HintSize="449.6,584.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="00cf8fa9-781a-4458-9e16-a45b3798408a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,270.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Enable VPN'" sap:VirtualizedContainerService.HintSize="353.6,182.4" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="00cf8fa9-781a-4458-9e16-a45b3798408a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="194, 498, 375, 57" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='btnProtection' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='btnProtection' role='push button' check:text='Enable VPN' /&gt;" Guid="1726e3eb-f8ad-46c5-aaf7-7334bada47bc" InformativeScreenshot="61fbceb5cbf19458bb581b4b349a52ca.png" ScopeSelectorArgument="&lt;wnd app='hide.me.exe' cls='HwndWrapper*' title='hide.me VPN' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="324, 512, 116, 30" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='btnProtection' /&gt;&lt;ctrl name='Enable VPN' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='btnProtection' /&gt;&lt;ctrl name='Enable VPN' role='text' automationid='' check:text='Enable VPN' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="128, 128, 762, 791" FilePath="C:\Program Files (x86)\hide.me VPN\hide.me.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAwUSURBVFhHxVgJWFTlGh6VmTPDIosgCoEobuECqKWmJmamGeZSqGVpSS65oGneBBfMK9e0TFMqtQRTU8NypVRcRkEHZmNgWASSBEQJRYFZQa++9/sPZwgUb2Vx7/c83zPnnH/53v/b/xH93who2ebCTSd3jam9RFXdjUu1jpCqLCs5lTVRqqk5K02zRNvLy9sJs/8HRICe0xs9QzKq+w/UG8OCdaYP/LXmeA+NWSFTW8ulKus9qboGDZlTW/cJq5uFWgxOKXYdkWPuH5plmDMmxxD3Urbx3Ei9MTcky1T+dKbpzpM6M7y1VrTW1ED2ALg6tlYIe/1NJJfb+aYbAgJ1xnlD9KYDL2QZ8kIzK8vGpd+oHqcpu/tKVhXG5RgxMtsIGkdghhkd061wexRAlVUv7PyYBLQQKSq8xUrLFJnKEt9WYy7okm629ss03SVz3hulKofP8s1wmREJr0Vr0X7xOjx7VI2Xsw0YnmXCU5lmdNVZ4UlatCeQDwLklOZ1gqQG9BM45i/CWx1pIBbpKl3IiX3EClMfaVrtVNoglt515D+1Mk0tnEiAl9aCTok56K8ow4tZpKmzBfBb9hncZi5F+4jVEL86EwEff4Mw0uRo0uIg0mKPDAu8SYtsfSOAKusdO6W5n0gUHd2SByAQl2btKKLooqjy45TW4ZzS9A5F1hqZqjZBmmbWExvJHPcZqIbsQgI6kKDe6koMI8HDTudh+BEVxp/MRPdVsXB4fR7Er8xA95jteCO7kjf1MNJiEAH0o3VsfUOAnKYmTaQokYlECshEOqufSGPxJTWHEpjVMpU1gVPVpNLEQjqJgZy1LsJUljpusBFj5j/uZKbOOgtvtpHMfLtOofeGXZiQqILPwn/C6Y0ItJ0VhZC4YwjPrcTEHANeEMzM1rH1jfxQWbOULNlKJLpobEt55yup2lJIYV1Bg6ZGIZ9qhGSXAlL5jUYaszE/51gBPE6XoFu6GQNJYGi2CZO05XhLVYIx352F5+xl6LRoDWacycSi7BuYm1eNNy4ZeDMP0JvRjQA29kOrxU5L5mU+ThrZQh/+XQ+oAXPHiyD+17eQxCWD25bUJEB2atl3OrQ9mosAShuDSeC4HBPeJgDzsyvQZ+12DN6wE50XxWBmUjpWFFRhYX41P/4y74dmBJCZ2zcGqLJXoi5Jk7ZuNhKotECWaqh/l6ZUgvvqDKQni+u/cadK64AJ78zBnyA/6kWCBqsrMFpRgvCsWxj7/Xn0it6M1lPmgwubhX5rvsQy/XUsya/CO6TF8eSHz2aZ0VMIFAcBIPn+epG83JEHyKlrkm2CGEvPV0B6opif2PB7I1aaG72zROtLAgIZwIvXMDatFLNybmNsghw9ln2KUVv2wHfOcthPnoM5ZzIQWVCJ2QTwVfJDFihsnQ+td6wDaJCoal4WRQuZRKKpeYk+3qgXyIA9CK6pbw3YmTb2o3zW8+Kv6HskHcOOpaP/5wnot+5ruEx7Dz7vRsH1zQVoNT4cY+KOYFn+bcwhgCxQnhMimR1QSDUasaq2Jw+OJ4piqdKyggaMTQlnLD1bDu6HrCbHGLtoa9CRHD1IfRu996Wg7/YjGPmdHG7hS3hQUjKvM5mZPfdeuQkr8m5hLvnhJALIEjYDyFIUA0jm3S3Sw1VAJ5AOLpzG+q1MU3OnKQBMe9yxnyG9UPXQmDT5FlwUVVSyLOhDETzkYin6bD2I0EMX0XrqewhasRGeAlDG7SmiV1yqwDwCOPlBgJScKWgj+dz8IDlq4M4pLT9QBNUy//tDfKESkh3n4LA9CX5pt3mAz2caMPSwCv7LNsI34kMM+mg7/COi6wGyb0uzyvlUw0xsA1hnYutNKgyjBEhNkMbgTgA32crX7zIFC0c5sHUilTSNkQc4ggS+lktl7kAyfBasht/8aHScvxL2k97lAbqQVgdu3IUXEs7jxQtFCMk01geJk9qa45Bq9BTQPII0cCaA64nvNgTD0o1M8Vv6acgsSDpQHQ5Mr9NIWFYlBu1IRJvwf8CXAHrPioQzVRIGsHvkJ+j0wXp4U/Pgs2Iz+iQV8OmJpRlHlXVnffT+N2KnYM0igbxnAyG9WM1XFf45zQTuSB5vZvbONwop5eh28mf0S8rDgH3nEPBRHEK2/YAJ+5LgQOmF5UEGcOLBZMzRXsPoRC26bdqP4NOFfKL2okTtoLJMEiD8PomVtT0IpIpMfv8h32Occrv+meUv1nj2oErSZccJPHNIhcBNexGuKMT4/achE8zLeMy+05ifV4WpudUYra+m0mhCd8oA7bSWO47kYoL4P0Z22jsDCWQGVZumQQrMKkB7MtGTpIlgeRF6ff0jen66B6+fy0PXqI1o9+5y2E14hwfYK2YbZlISfy3XgFHUkj1NftuFNQsa80lB7J8j1pNJVTVnmgJmY1ZDPUiDTNBTOgOCElLRYWUsniE/dJn+PrzmrqwH6PTmQkxMLaYqYuSTdHCmhU9R7irLZEHknydOa+1MyfxUU+DIBfg86UbJmkVycHo1hmUQn7qE7mvj0G7eKrQicG4zlsKRwLHn4K2HMUZo+1kdfkJnve5JXZUg7vFIrDH2IjC6BwHyCZyaB1aP3bYeh+/OsxhCfsX8q+vHu8CR/zEO3LAbXu/F1Glx+hKMyKjCAJrHWi0vjXlvw6b58YjCX6I2v0qN7LVGIKmScAcy4UAdkPPWE/COP4v+JHjg2csIij+B1m8vgevMKDxLke2/6gu+q2YgA49m8HnTP91ynwLkzYeuGY9FtIkszTyXOqAyXnuHL4E7lAsp5Ufmh23IDztR09BbeQtd40/Ba3ks+d4M+K7cgtDUqxhO1wDP99fz37w+2cvfR3zSLb96aKz+goS/geSwE6stU6moF4tX7YDki+PU2F7htcnM7K02ocPBDLSJ3Ax70p5k0hw8czwLI5RlGJpchID4JP6bU0QM/NUGtFOb9zs/1Bz8VSKQVDNHSvapS7nv9XwTwQDyWrxwC07R28BNWcAD6fz1CQzVVWGo9hYGpVEy330O7tFbIQ2nm97pkntt1eZZf93/miIytyS5chyXZrpV74/UjdvH/gj7qFiIw2bDc/236KuppGCguwq19v0zTPD5/DBcl34GbvoHcEnQlrprLEOEHZuBCsDRhWslRbfFBlJG3bhk/ho4LPwI/snX+TobRACDiXsqK+Cxfg8kr0eAmxEFWWziGWeVtZOwW/OQJL2mC5dqTCTt1Ug+Pw7JxoOQbvgeHqeKqcez8FfKbgSyO3FXeu6oNsIp5hvYvTbvvjjqi838tbc5iUut9BPHJk7kvjyRJV786V3xim2Q/VhIHY4VbSmqWZfiQ8B8idnFqh2x2/kbsJu2uNZuSsRS2qJF3U7NQRQsUoVlqPhgzsRW096PsZsfI+f2pNGdmq6QZG7W5bgSu1OVYaXQ7cw1OKdUQLZfC7uItfdaTQjfLAqdaS/s1gzELtZ0XRDJr7iIwuZ1bBk2O1Gy5aiG2nb+4s9KIIts1u0wtqc2TUaJnXVC4g933Gk5PjzbLmz6QNqpGbX4G7UQjZ0WZPfW4oOSQ9lF1AHVRfYjmNt2Qk8arGw1YfrVlhPCD4jGhocI+zSmhISEVhqNRmzj7OxsSUMGICkoKOBsTO/clStXpAqFQkbz7RlnZGQ40FzH8vJyxyVxu/uMjT+20CetUmX/iH8sZNS+LUnJmb5u36GZUTv3R0bG7V2+98z55/Lz8zuRDP+ioqKOV69efaK4uNhVxASUlJS4FRYWetIEbxLuRwP+paWl3a5fvx5AYz2Je9F4b1oUSONBNBZEv8H0G0yb9WF87do1/pfW9mW8Lb9scpDOlMK68gcB+mlNxQVXrg6wzbUxk8XAXb58uS3tZ0/K4E3fgh5aMu0xDdEkWVlZmcPNmzedCIQLTXSn33YExoc28afn7gwwA9gQUFO86+dfxw3JNMiZL9rAEeD7C3Jvf2KbQ/sE0a8/KcODyZXL5Xa8af8osVNE0z2VuQJbbHMDdhhmVvr1IMDev/zySwf67UygA5immUYZgMTC0udH6A3HmbkZuOGZpqSUK1dD2CFp3ItZkO1r01ZzELNAPdsOww5w6dIlJ2aBxPziTgtzbo9dkFsx4aficn+9vtiVzfl9UCLRfwDSNyJcnUD5vwAAAABJRU5ErkJggg==" InformativeScreenshot="3717bd01caa06a6459e75e5f49f60ea3.png" Selector="&lt;wnd app='hide.me.exe' cls='HwndWrapper*' title='hide.me VPN' /&gt;" Title="hide.me VPN" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
